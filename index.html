@@ -46,7 +46,39 @@
 
     <div class="row">
         <div class="col-12">
+<form>
+                <div class="d-flex flex-row">
+                    <div class="col-auto">
+                        <label for="montant">Montant</label>
+                        <input type="number" class="form-control" id="montant" placeholder="Montant">
+                    </div>
+                    <div class="col-auto">
+                        <label for="source">De</label>
+                        <select class="custom-select" id="source">
+                            <option selected>Devise</option>
+                            <option value="1">Euro</option>
+                            <option value="2">US-dollar</option>
+                            <option value="3">Dinar</option>
+                        </select>
+                    </div>
+                    <div class="col-auto align-self-end my-flex-item">
+                        <a href="#" class="btn btn-light"><<=>></a>
+                    </div>
+                    <div class="col-auto">
+                        <label for="cible">À</label>
+                        <select class="custom-select" id="cible">
+                            <option selected>Devise</option>
+                            <option value="1">Euro</option>
+                            <option value="2">US-dollar</option>
+                            <option value="3">Dinar</option>
+                        </select>
+                    </div>
+                    <div class="col-auto align-self-end my-flex-item">
+                        <a href="#" class="btn btn-primary">Convertir</a>
+                    </div>
 
+                </div>
+            </form>
         </div>
     </div>
     <div class="row">

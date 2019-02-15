@@ -46,7 +46,7 @@
 
     <div class="row">
 
-        <div class="col-2">
+        <div class="col-lg-2">
             <div class="card bg-light">
                 <div class="card-header"><strong>15/02/2019</strong></div>
                 <div class="card-body">
@@ -56,19 +56,78 @@
                 </div>
             </div>
             <hr/>
+
+        </div>
+        <div class="col-lg-10">
+            <div class="card bg-light">
+                <div class="card-header"><strong>Conversion</strong></div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-1">
+                                <label for="montant">Montant</label>
+                                <input type="number" class="form-control" id="montant" placeholder="Montant">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="source">De</label>
+                                <select class="custom-select" id="source">
+                                    <option selected>Devise</option>
+                                    <option value="1">Euro</option>
+                                    <option value="2">US-dollar</option>
+                                    <option value="3">Dinar</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <button type="button" class="btn btn-warning">Inverser</button>
+
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="cible">À</label>
+                                <select class="custom-select" id="cible">
+                                    <option selected>Devise</option>
+                                    <option value="1">Euro</option>
+                                    <option value="2">US-dollar</option>
+                                    <option value="3">Dinar</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#" class="btn btn-primary">Convertir</a>
+                            </div>
+                            <div class="col-md-2">
+                                <h5> 300 Euro = 400 dinars</h5>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-primary btn-lg">Vente</button>
+                                <button type="button" class="btn btn-secondary btn-lg">Achat</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <footer class="card-text">cours d'echange 1Euro = 3Dinar (Dernière mise à jour : 2019-02-14 16:19)</footer>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-2">
             <div class="card bg-light">
                 <div class="card-header"><strong>Configuration 15/02/2019</strong></div>
                 <div class="card-body">
                     <form>
                         <div class="form-group row">
-                            <label  class="col-sm-4 col-form-label" for="deviseEuro">Euro</label>
-                            <div class="col-sm-8">
+                            <label  class="col-md-4 col-form-label" for="deviseEuro">Euro</label>
+                            <div class="col-md-8">
                                 <input type="number" class="form-control" min="0" id="deviseEuro" placeholder="cours Euro">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label  class="col-sm-4 col-form-label" for="deviseDollar">Dollar</label>
-                            <div class="col-sm-8">
+                            <label  class="col-md-4 col-form-label" for="deviseDollar">Dollar</label>
+                            <div class="col-md-8">
                                 <input type="number" class="form-control" min="0" id="deviseDollar" placeholder="cours Dollar">
                             </div>
                         </div>
@@ -77,56 +136,147 @@
                 </div>
             </div>
         </div>
-        <div class="col-10">
-
+        <div class="col-lg-10">
             <div class="card bg-light">
-                <div class="card-header"><strong>Conversion</strong></div>
+                <div class="card-header"><strong>Operation Vente</strong></div>
                 <div class="card-body">
-                    <div class="d-flex flex-row">
-                        <div class="col-auto">
-                            <label for="montant">Montant</label>
-                            <input type="number" class="form-control" id="montant" placeholder="Montant">
-                        </div>
-                        <div class="col-auto">
-                            <label for="source">De</label>
-                            <select class="custom-select" id="source">
-                                <option selected>Devise</option>
-                                <option value="1">Euro</option>
-                                <option value="2">US-dollar</option>
-                                <option value="3">Dinar</option>
-                            </select>
-                        </div>
-                        <div class="col-auto align-self-end my-flex-item">
-                            <a href="#" class="btn btn-light"><<=>></a>
-                        </div>
-                        <div class="col-auto">
-                            <label for="cible">À</label>
-                            <select class="custom-select" id="cible">
-                                <option selected>Devise</option>
-                                <option value="1">Euro</option>
-                                <option value="2">US-dollar</option>
-                                <option value="3">Dinar</option>
-                            </select>
-                        </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="recherchePersonne">Recherche</label>
+                                        <input type="text" class="form-control" id="recherchePersonne" placeholder="Recherche de personne">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputZip">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                            </form>
 
-                        <div class="col-auto align-self-end my-flex-item">
-                            <a href="#" class="btn btn-primary">Convertir</a>
                         </div>
-                        <div class="col-auto align-self-end my-flex-item">
-                            <h5> 300 Euro = 400 dinars</h5>
-                        </div>
-                        <div class="col-auto align-self-end my-flex-item">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3 class="text-center">300 Euros</h3>
+                                    <table class="table table-bordered">
+                                        <thead>
 
-                            <button type="button" class="btn btn-primary btn-lg">Vente</button>
-                            <button type="button" class="btn btn-secondary btn-lg">Achat</button>
+                                            <tr>
+                                                <th scope="col">Billets</th>
+                                                <th scope="col">Pieces</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="width-70">100 Euros</label> <input type="number" class="width-50" /></td>
+                                                <td><label class="width-70"> 2 Euros</label> <input type="number" class="width-50"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="width-70">50 Euros</label> <input type="number" class="width-50" /></td>
+                                                <td><label class="width-70">2 Euros</label> <input type="number" class="width-50" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="width-70">20 Euros</label> <input type="number" class="width-50"/></td>
+                                                <td><label class="width-70">2 Euros</label> <input type="number" class="width-50" /></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><label class="width-70">10 Euros</label> <input type="number" class="width-50" /></td>
+                                                <td><label class="width-70">2 Euros </label><input type="number" class="width-50"/></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><label class="width-70">5 Euros</label> <input type="number" class="width-50" /></td>
+                                                <td><label class="width-70">2 Euros</label> <input type="number" class="width-50" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="text-center">500 Dinars</h3>
+                                    <table class="table table-bordered">
+                                        <thead>
+
+                                        <tr>
+                                            <th scope="col">Billets</th>
+                                            <th scope="col">Pieces</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><label class="width-70">100 Dinars</label> <input type="number" class="width-50" /></td>
+                                            <td><label class="width-70"> 2 Dinars</label> <input type="number" class="width-50"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="width-70">50 Dinars</label> <input type="number" class="width-50" /></td>
+                                            <td><label class="width-70">2 Dinars</label> <input type="number" class="width-50" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="width-70">20 Dinars</label> <input type="number" class="width-50"/></td>
+                                            <td><label class="width-70">2 Dinars</label> <input type="number" class="width-50" /></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><label class="width-70">10 Dinars</label> <input type="number" class="width-50" /></td>
+                                            <td><label class="width-70">2 Dinars </label><input type="number" class="width-50"/></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><label class="width-70">5 Dinars</label> <input type="number" class="width-50" /></td>
+                                            <td><label class="width-70">2 Dinars</label> <input type="number" class="width-50" /></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-
-                    <footer class="card-text">cours d'echange 1Euro = 3Dinar (Dernière mise à jour : 2019-02-14 16:19) </footer>
-
                 </div>
             </div>
+
+
         </div>
     </div>
 

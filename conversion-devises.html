@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+
+    <title>Calcule devise!</title>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-3">
+            <div class="card bg-light">
+                <div class="card-header"><strong>15/02/2019</strong></div>
+                <div class="card-body">
+                    <h5 class="card-title">1 Euro = 2 Dinar</h5>
+                    <h5 class="card-title">1 Dollar = 2 Dinar</h5>
+                    <h5 class="card-title">1 Yen = 2 Dinar</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+
+            <div class="card bg-light">
+                <div class="card-header"><strong>Conversion</strong></div>
+                <div class="card-body">
+                    <div class="d-flex flex-row">
+                        <div class="col-auto">
+                            <label for="montant">Montant</label>
+                            <input type="number" class="form-control" id="montant" placeholder="Montant">
+                        </div>
+                        <div class="col-auto">
+                            <label for="source">De</label>
+                            <select class="custom-select" id="source">
+                                <option selected>Devise</option>
+                                <option value="1">Euro</option>
+                                <option value="2">US-dollar</option>
+                                <option value="3">Dinar</option>
+                            </select>
+                        </div>
+                        <div class="col-auto align-self-end my-flex-item">
+                            <a href="#" class="btn btn-light"><<=>></a>
+                        </div>
+                        <div class="col-auto">
+                            <label for="cible">À</label>
+                            <select class="custom-select" id="cible">
+                                <option selected>Devise</option>
+                                <option value="1">Euro</option>
+                                <option value="2">US-dollar</option>
+                                <option value="3">Dinar</option>
+                            </select>
+                        </div>
+                        <div class="col-auto align-self-end my-flex-item">
+                            <a href="#" class="btn btn-primary">Convertir</a>
+                        </div>
+                    </div>
+
+                    <p class="card-text">
+                       <h5> 300 Euro = 400 dinars</h5>
+                        <button type="button" class="btn btn-primary btn-lg">Vente</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Achat</button>
+                    </p>
+
+
+                    <footer class="card-text">cours d'echange 1Euro = 3Dinar (Dernière mise à jour : 2019-02-14 16:19) </footer>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+
+</body>
+</html>
